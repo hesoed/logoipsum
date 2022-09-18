@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Logoipsum</title>
+</head>
+<body>
+
+    <!--==== SVG ====-->
+
+    <svg style="display: none;">
+
+        <symbol id="facebook" viewBox="0 0 20 21" fill="none">
+            <g>
+                <path d="M15 2.1665H12.5C11.3949 2.1665 10.3351 2.60549 9.5537 3.38689C8.7723 4.16829 8.33331 5.2281 8.33331 6.33317V8.83317H5.83331V12.1665H8.33331V18.8332H11.6666V12.1665H14.1666L15 8.83317H11.6666V6.33317C11.6666 6.11216 11.7544 5.9002 11.9107 5.74392C12.067 5.58763 12.279 5.49984 12.5 5.49984H15V2.1665Z" stroke-linecap="round" join="round" stroke="#2F234F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+        </symbol>
+
+        <symbol id="instagram" viewBox="0 0 20 21" fill="none">
+            <g>
+                <path d="M14.1667 2.1665H5.83335C3.53217 2.1665 1.66669 4.03198 1.66669 6.33317V14.6665C1.66669 16.9677 3.53217 18.8332 5.83335 18.8332H14.1667C16.4679 18.8332 18.3334 16.9677 18.3334 14.6665V6.33317C18.3334 4.03198 16.4679 2.1665 14.1667 2.1665Z" stroke="#2F234F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3333 9.97476C13.4362 10.6683 13.3177 11.3766 12.9948 11.9989C12.6719 12.6213 12.1609 13.1259 11.5347 13.4412C10.9084 13.7564 10.1987 13.8661 9.50647 13.7547C8.81425 13.6433 8.17478 13.3165 7.67901 12.8207C7.18324 12.325 6.85642 11.6855 6.74504 10.9933C6.63365 10.3011 6.74337 9.59134 7.05859 8.96507C7.3738 8.33881 7.87847 7.82788 8.5008 7.50496C9.12313 7.18205 9.83144 7.06359 10.525 7.16643C11.2324 7.27133 11.8874 7.60098 12.3931 8.10668C12.8988 8.61239 13.2284 9.26733 13.3333 9.97476Z" stroke="#2F234F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.5833 5.9165H14.5916" stroke="#2F234F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 20 21" fill="none">
+            <g>
+                <path d="M13.3333 7.1665C14.6594 7.1665 15.9312 7.69329 16.8688 8.63097C17.8065 9.56865 18.3333 10.8404 18.3333 12.1665V17.9998H15V12.1665C15 11.7245 14.8244 11.3006 14.5118 10.988C14.1993 10.6754 13.7753 10.4998 13.3333 10.4998C12.8913 10.4998 12.4674 10.6754 12.1548 10.988C11.8422 11.3006 11.6666 11.7245 11.6666 12.1665V17.9998H8.33331V12.1665C8.33331 10.8404 8.8601 9.56865 9.79778 8.63097C10.7355 7.69329 12.0072 7.1665 13.3333 7.1665V7.1665Z" stroke="#2F234F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.00002 8H1.66669V18H5.00002V8Z" stroke="#2F234F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.33335 5.49984C4.25383 5.49984 5.00002 4.75365 5.00002 3.83317C5.00002 2.9127 4.25383 2.1665 3.33335 2.1665C2.41288 2.1665 1.66669 2.9127 1.66669 3.83317C1.66669 4.75365 2.41288 5.49984 3.33335 5.49984Z" stroke="#2F234F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+        </symbol>
+            
+        <symbol id="twitter" viewBox="0 0 20 21" fill="none">
+            <g>
+                <g clip-path="url(#clip0_25_290)">
+                <path d="M19.1666 3.00008C18.3686 3.56298 17.4851 3.9935 16.55 4.27508C16.0481 3.698 15.3811 3.28899 14.6392 3.10335C13.8973 2.91771 13.1162 2.96441 12.4017 3.23712C11.6872 3.50984 11.0737 3.99541 10.6441 4.62818C10.2146 5.26094 9.98973 6.01036 9.99998 6.77508V7.60841C8.53551 7.64639 7.08437 7.32159 5.77582 6.66295C4.46727 6.00431 3.34191 5.03228 2.49998 3.83341C2.49998 3.23712 -0.833354 11.3334 6.66665 14.6667C4.95042 15.8317 2.90594 16.4159 0.833313 16.3334C8.33331 20.5001 17.5 16.3334 17.5 6.75008C17.4992 6.51796 17.4769 6.28641 17.4333 6.05841C18.2838 5.21966 18.884 4.16067 19.1666 3.00008Z" stroke="#2F234F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_25_290">
+                <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                </defs>
+            </g>
+        </symbol>
+            
+    </svg>
+
+
+
+    <div class="main"> <!--==== MAIN ====-->
+            <div class="nav"> <!--==== NAV ====-->
+                <div class="nav-inner section-m1">
+                    <a href="#"><img src="assets/images/Logo.png" alt=""></a>
+                    <ul>
+                        <a href=""><li>Home</li></a>
+                        <a href=""><li>About</li></a>
+                        <a href=""><li>Property</li></a>
+                        <a href=""><li>Blog</li></a>
+                        <a href=""><li>Contact</li></a>
+                    </ul>
+                </div>
+            </div>
+
+        <div class="container"> <!--==== CONTAINER ====-->
+            <div class="hero"> <!--==== HERO ====-->
+                <h3>We are offering the</h3>
+                <h1> <span class="span-animate"> <span>Luxury</span> <span>Finest</span> <span>Best</span> </span> Best Real Estate Deals</h1>
+                <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h2>
+                <button>More details</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"> <!--==== CONTAINER ====-->
+        <div class="search-bar"> <!--==== SEARCH-BAR ====-->
+            
+                <div class="search-bar-inner">
+                    <h2>Find Your Home <i class="fa-solid fa-magnifying-glass"></i></h2>
+
+                    <div class="search">
+                        <form action="https://www.google.com/search" method="get">
+                            <input id="search-input" style="margin: 0 0 0 40px;" placeholder="Location"></input>
+                        </form>
+                        <form action="https://www.google.com/search" method="get">
+                            <input id="search-input" placeholder="Category"></input>
+                        </form>
+                        <form action="https://www.google.com/search" method="get">
+                            <input id="search-input" placeholder="Property Type"></input>
+                        </form>
+
+                        <button>Search</button>
+
+                    </div>
+                </div>
+            
+        </div> <!--==== SEARCH-BAR ====-->
+    </div> <!--==== CONTAINER ====-->
+
+    <div class="container-smaller"> <!--==== CONTAINER-SMALLER ====-->
+        <div class="featured-properties"> <!--==== FEATURED-PROPERTIES ====-->
+
+            <h1 class="classic-h1"">Featured Properties</h1>
+            <h2 class="classic-h2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h2>
+
+            <div class="featured-pics">
+                <div class="featured-item content-1">
+                    <img src="assets/images/new-prop1.png" style="border-radius: 5px;" alt="">
+                    <div class="item-content">
+                        <h1>New Property</h1>
+                        <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet</h2>
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="featured-item content-n">
+                    <img src="assets/images/new-prop2.png" alt="">
+                    <div class="item-content">
+                        <h1>New Property</h1>
+                        <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet</h2>
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="featured-item content-n">
+                    <img src="assets/images/new-prop3.png" alt="">
+                    <div class="item-content">
+                        <h1>New Property</h1>
+                        <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet</h2>
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="featured-item content-n">
+                    <img src="assets/images/new-prop4.png" alt="">
+                    <div class="item-content">
+                        <h1>New Property</h1>
+                        <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet</h2>
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="featured-item content-n">
+                    <img src="assets/images/new-prop5.png" alt="">
+                    <div class="item-content">
+                        <h1>New Property</h1>
+                        <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet</h2>
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+        </div> <!--==== FEATURED-PROPERTIES ====-->
+    </div> <!--==== CONTAINER-SMALLER ====-->
+
+    <div class="container-smaller"> <!--==== CONTAINER-SMALLER ====-->
+        <div class="features" style="margin-top: 42px"> <!--==== FEATURES ====-->
+            <div class="classic-h1">Our Features</div>
+            <div class="features-inner"> <!--==== FEATURES-INNER ====-->
+
+                <div class="features-l">
+                    <div class="features-item">
+                        <h1>Living Inside a Nature</h1>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget diam habitant massa in.</h2>
+                    </div>
+                    <div class="features-item">
+                        <h1>Royal Touch Paint</h1>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget diam habitant massa in.</h2>
+                    </div>
+                    <div class="features-item">
+                        <h1>Luxurious Fittings</h1>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget diam habitant massa in.</h2>
+                    </div>
+                </div>
+
+                <div class="features-r">
+                    <img src="assets/images/cover.png" style="width: 436px;" alt="">
+                </div>
+
+            </div> <!--==== FEATURES-INNER ====-->
+        </div> <!--==== FEATURES ====-->
+    </div> <!--==== CONTAINER-SMALLER ====-->
+    
+    <div class="container-smaller"> <!--==== CONTAINER-SMALLER ====-->
+        <h1 class="classic-h1">Recent Properties</h1>
+        <h2 class="classic-h2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h2>
+        <div class="recent-properties"> <!--==== RECENT PROPERTIES ====-->
+            <div class="recent-properties-item">
+                <img src="assets/images/rp1.png" alt="">
+            </div>
+            <div class="recent-properties-item description">
+                <h1>Interior Design</h1>
+                <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit... <span style="color: #7F57F1; font-weight: 800; cursor: pointer;">Read more</span></h2>
+                <h3>$ 20,000/<span style="font-size: 24px;">Month</span></h3>
+            </div>
+            <div class="recent-properties-item description">
+                <h1>Interior Design</h1>
+                <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit... <span style="color: #7F57F1; font-weight: 800; cursor: pointer;">Read more</span></h2>
+                <h3>$ 26,000/<span style="font-size: 24px;">Month</span></h3>
+            </div>
+            <div class="recent-properties-item">
+                <img src="assets/images/rp2.png" alt="">
+            </div>
+            <button>View more</button>
+        </div>
+    </div> <!--==== CONTAINER-SMALLER ====-->
+
+    <div class="container-smaller"> <!--==== CONTAINER-SMALLER ====-->
+        <h1 class="classic-h1">Meet Our Team</h1>
+        <h2 class="classic-h2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h2>
+        <div class="team"> <!--==== TEAM ====-->
+
+            <div class="team-member" id="team-member">
+                <div class="team-avatar">
+                    <img src="assets/images/avatar-mask1.png" alt="">
+                </div>
+                <div class="team-text">
+                    <h1 class="team-member-name">
+                        Kathryn Murphy
+                    </h1>
+                    <h2 class="team-member-position">
+                        Co-Founder
+                    </h2>
+                </div>
+                <div class="team-socials" id="team-socials">
+                    <a href="https://www.facebook.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-avatar">
+                    <img src="assets/images/avatar-mask2.png" alt="">
+                </div>
+                <div class="team-text">
+                    <h1 class="team-member-name">
+                        Brooklyn Simmons
+                    </h1>
+                    <h2 class="team-member-position">
+                        Founder
+                    </h2>
+                </div>
+                <div class="team-socials">
+                    <a href="https://www.facebook.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-avatar">
+                    <img src="assets/images/avatar-mask3.png" alt="">
+                </div>
+                <div class="team-text">
+                    <h1 class="team-member-name">
+                        Floyd Miles
+                    </h1>
+                    <h2 class="team-member-position">
+                        Founder
+                    </h2>
+                </div>
+                <div class="team-socials" id="team-socials3">
+                    <a href="https://www.facebook.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-avatar">
+                    <img src="assets/images/avatar-mask4.png" alt="">
+                </div>
+                <div class="team-text">
+                    <h1 class="team-member-name">
+                        Ronald Richards
+                    </h1>
+                    <h2 class="team-member-position">
+                        Co-Founder
+                    </h2>
+                </div>
+                <div class="team-socials">
+                    <a href="https://www.facebook.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <svg class="social-icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div> <!--==== CONTAINER-SMALLER ====-->
+
+    <div class="container-smaller"> <!--==== CONTAINER-SMALLER ====-->
+        <h1 class="classic-h1">Our Clients Speak</h1>
+        <h2 class="classic-h2">We have been working with clients around the world</h2>
+                <div class="clients-reviews"> <!--==== CLIENTS REVIEWS ====-->
+                    <div class="client-box">
+                        <div class="client-text">
+                            <img src="assets/images/quotemark.png" alt="">
+                            <h1>Professional Partner</h1>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magna pharetra in amet porta enim.</h2>
+                        </div>
+                        <div class="client-person">
+                            <div class="client-avatar">
+                                <img src="assets/images/client-avatar1.png" alt="">
+                            </div>
+                            <h1>Lorri Warf</h1>
+                            <h2>UX Designer</h2>
+                        </div>
+                    </div>
+                    <div class="client-box">
+                        <div class="client-text">
+                            <img src="assets/images/quotemark.png" alt="">
+                            <h1>Incredible Experience</h1>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magna pharetra in amet porta enim.</h2>
+                        </div>
+                        <div class="client-person">
+                            <div class="client-avatar">
+                                <img src="assets/images/client-avatar2.png" alt="">
+                            </div>
+                            <h1>David Elson</h1>
+                            <h2>Developer</h2>
+                        </div>
+                    </div>
+                    <div class="client-box">
+                        <div class="client-text">
+                            <img src="assets/images/quotemark.png" alt="">
+                            <h1>Dependable & Responsive</h1>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magna pharetra in amet porta enim.</h2>
+                        </div>
+                        <div class="client-person">
+                            <div class="client-avatar">
+                                <img src="assets/images/client-avatar3.png" alt="">
+                            </div>
+                            <h1>Ricky Smith</h1>
+                            <h2>Developer</h2>
+                        </div>
+                    </div>
+                </div> <!--==== CLIENTS REVIEWS ====-->
+        </div>
+    </div> <!--==== CONTAINER-SMALLER ====-->
+
+    <div style="background-color: var(--medium-blue)">
+        <div class="container-smaller"> <!--==== CONTAINER-SMALLER ====-->
+            <div class="subscription">
+                <div class="subscription-left">
+                    <img src="assets/images/shapes.png" alt="">
+                </div>
+                <div class="subscription-right">
+                    <h1>Don't Miss A Thing!</h1>
+                    <h2>Subscribe with Email and loads of interesting news will be sent to you on a daily basis.</h2>
+                    <div class="subscription-input">
+                        <input type="text" placeholder="Your email here">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!--==== CONTAINER-SMALLER ====-->
+    </div>
+
+    <div class="container-smaller"> <!--==== CONTAINER-SMALLER ====-->
+        <footer>
+            <div class="footer-logo">
+                <img src="assets/images/footer-logo.png" alt="">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+            </div>
+            <div class="footer-columns">
+                <div class="footer-rec-prop">
+                    <h1>Recent Properties</h1>
+                    <div class="footer-rec-prop-item">
+                        <img src="assets/images/footer-recprop1.png" alt="">
+                        <div class="footer-rec-prop-text">
+                            <h1>2972 Westheimer Rd. Santa Ana, Illinois 85486.</h1>
+                            <h2>$ 20,000</h2>
+                        </div>
+                    </div>
+                    <div class="footer-rec-prop-item">
+                        <img src="assets/images/footer-recprop2.png" alt="">
+                        <div class="footer-rec-prop-text">
+                            <h1>22118 Thornridge Cir. Syracuse, Connecticut 35624</h1>
+                            <h2>$ 28,000</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact-info">
+                    <h1>Contact Info</h1>
+                    <h2>2972 Westheimer Rd. Santa Ana, Illinois 85486.</h2>
+                    <h2><span>Phone:</span> (239) 555-0108</h2>
+                    <h2><span>Email:</span> abcd@domain.com</h2>
+                    <h2><span>Website:</span> abcd@domain.in</h2>
+                </div>
+            </div>
+        </footer>
+    </div> <!--==== CONTAINER-SMALLER ====-->
+
+
+    
+    <script src="https://kit.fontawesome.com/4cc3817e91.js" crossorigin="anonymous"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
